@@ -41,9 +41,9 @@ async function getMagistantsFromSheet(sheetId, groupId){
         return {
             groupNumber: groupId,
             name: row._rawData[0],
-            supervisor: row._rawData[11],
-            practicePlace: row._rawData[10],
-            workingTopic: row._rawData[17],
+            supervisor: row._rawData[12],
+            practicePlace: row._rawData[11],
+            workingTopic: row._rawData[18],
             privateNumber: +row._rawData[1]
         }
     })

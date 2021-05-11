@@ -4,13 +4,15 @@ import { GroupListLayoutComponent } from './group-list-layout/group-list-layout.
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
     imports: [
         CommonModule,
         MatTableModule,
         MatCheckboxModule,
-        MatIconModule
+        MatIconModule,
+        MatProgressSpinnerModule
     ],
     exports: [
         GroupListLayoutComponent

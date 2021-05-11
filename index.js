@@ -65,7 +65,12 @@ ipcMain.on('get-magistrants', function(event, arg){
 })
 
 ipcMain.on('get-file', function(event, arg){
-    ExcelHelper.buildFile(arg, __dirname)
+    ExcelHelper.buildFile(arg, __dirname).then(()=>{
+        event.sender.send('file-loaded');
+    }).catch((error) =>{
+        console.log(error);
+        event.sender.send('file-loaded');
+    })
 });
 
 

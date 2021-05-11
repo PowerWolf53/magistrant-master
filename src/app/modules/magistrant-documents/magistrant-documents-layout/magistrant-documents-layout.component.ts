@@ -1,13 +1,13 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, NgZone, OnInit} from '@angular/core';
 import {MaigistrantModel} from '../../magistrant-list/model/maigistrant.model';
 import {DocCardModel} from '../models/doc-card.model';
 import {IpcService} from '../../../services/ipc.service';
+import {Observable} from 'rxjs';
 
 const cards: DocCardModel[] = [
   {
     image: '../../../assets/screens/dogovor.png',
-    label: 'Договор Практики',
-    type: 'plan'
+    label: 'Договор Практики'
   },
   {
     image: '../../../assets/screens/dnevnik.png',
@@ -32,12 +32,20 @@ export class MagistrantDocumentsLayoutComponent implements OnInit {
 
   public docCards: DocCardModel[] = cards;
 
-  constructor(private ipcService: IpcService) { }
+  loading = false;
+
+  constructor(private ipcService: IpcService, private ngZone: NgZone) { }
 
   ngOnInit(): void {
+    this.ipcService.fileLoaded.asObservable().subscribe(s => {
+      this.ngZone.run(() => {
+        this.loading = false;
+      });
+    });
   }
 
   handleGetFile(card: DocCardModel): void {
+    this.loading = true;
     this.ipcService.getFile(card, this.magistrant);
   }
 }

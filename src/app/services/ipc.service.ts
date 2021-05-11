@@ -5,6 +5,7 @@ import {setGroups} from '../modules/group-list/store/group-list.actions';
 import {setGroup} from '../modules/magistrant-list/store/magistrant-list.actions';
 import {DocCardModel} from '../modules/magistrant-documents/models/doc-card.model';
 import {MaigistrantModel} from '../modules/magistrant-list/model/maigistrant.model';
+import {Subject} from 'rxjs';
 
 declare var ipcRenderer: any;
 
@@ -13,10 +14,13 @@ declare var ipcRenderer: any;
 })
 export class IpcService {
 
+  fileLoaded: Subject<boolean> = new Subject<boolean>();
+
   constructor(private store: Store<{ groupList: Group[] }>,
               private magistrantsListStore: Store<{ magistrantList }>) {
     this.listenToGroups();
     this.listenToMagistrants();
+    this.listenToFileLoaded();
   }
 
   public pingToDownload(): void{
@@ -50,6 +54,21 @@ export class IpcService {
       data: {
         magistrant
       }
+    });
+  }
+
+  public getCommonFile(doc: DocCardModel, magistrants: MaigistrantModel[]): void{
+    ipcRenderer.send('get-file', {
+      fileType: doc.type,
+      data: {
+        magistrants
+      }
+    });
+  }
+
+  private listenToFileLoaded(): void {
+    ipcRenderer.on('file-loaded', (event, arg) => {
+      this.fileLoaded.next(true);
     });
   }
 }

@@ -6,6 +6,7 @@ import {DocCardComponent} from './components/doc-card/doc-card.component';
 import { CommonDocumentsLayoutComponent } from './common-documents-layout/common-documents-layout.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 
@@ -24,6 +25,7 @@ import {MatChipsModule} from '@angular/material/chips';
         MatButtonModule,
         MatIconModule,
         MatChipsModule,
+        MatProgressSpinnerModule,
     ]
 })
 export class MagistrantDocumentsModule { }
