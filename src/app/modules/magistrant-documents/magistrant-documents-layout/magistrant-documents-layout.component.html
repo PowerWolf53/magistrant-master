@@ -1,0 +1,3 @@
+<div class="cards-wrapper">
+    <app-doc-card (click)="handleGetFile(card)" *ngFor="let card of docCards; let i = index" [cardModel]="card"></app-doc-card>
+</div>

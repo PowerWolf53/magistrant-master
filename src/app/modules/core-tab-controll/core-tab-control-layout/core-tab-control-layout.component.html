@@ -1,0 +1,16 @@
+<div class="tab-wrapper">
+    <mat-tab-group #tabGroup>
+        <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab.name" [ngSwitch]="tab.type">
+            <ng-template mat-tab-label>
+                <div class="col" style="margin-left: 20px;">{{tab.name}}</div>
+                <button *ngIf="tab.type !== 0" style="color:black" mat-icon-button (click)="closeTab(index)">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </ng-template>
+            <app-group-list-layout *ngSwitchCase="0"></app-group-list-layout>
+            <app-magistrant-list-layout [groupId]="tab.id" *ngSwitchCase="1"></app-magistrant-list-layout>
+            <app-magistrant-documents-layout [magistrant]="tab.data" *ngSwitchCase="2"></app-magistrant-documents-layout>
+            <app-common-documents-layout [tabInfo]="tab" *ngSwitchCase="3"></app-common-documents-layout>
+        </mat-tab>
+    </mat-tab-group>
+</div>

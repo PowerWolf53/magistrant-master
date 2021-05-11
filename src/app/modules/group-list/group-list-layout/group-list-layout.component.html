@@ -1,0 +1,35 @@
+<table *ngIf="!!dataSource" mat-table [dataSource]="dataSource" class="mat-elevation-z8 groups-table">
+
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+        <th class="view-column" mat-header-cell *matHeaderCellDef>
+        </th>
+        <td mat-cell *matCellDef="let row">
+            <mat-icon (click)="handleViewClick(row)" class="icon-pointer">plagiarism</mat-icon>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef> Форма обучения </th>
+        <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="course">
+        <th mat-header-cell *matHeaderCellDef> Курс </th>
+        <td mat-cell *matCellDef="let element"> {{element.course}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="link">
+        <th mat-header-cell *matHeaderCellDef> Google таблица </th>
+        <td mat-cell *matCellDef="let element"> <span class="link">{{element.link}}</span> </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

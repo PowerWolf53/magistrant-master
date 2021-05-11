@@ -1,0 +1,14 @@
+.stickers-wrapper{
+	width: calc(100vw - 50px);
+	margin-left: 25px;
+	min-height: 200px;
+	display: flex;
+	align-items: flex-start !important;
+	margin-top: 30px;
+}
+
+.cards-wrapper{
+	display: flex;
+	margin-left: -25px;
+	margin-top: 10px;
+}

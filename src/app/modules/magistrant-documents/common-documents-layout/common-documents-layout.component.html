@@ -1,0 +1,11 @@
+<mat-chip-list #chipList class="stickers-wrapper">
+    <mat-chip *ngFor="let mag of selectedMagistrants"
+              [removable]="true" [selectable]="false" (removed)="remove(mag)">
+        {{getInitials(mag.name)}}
+        <mat-icon matChipRemove>cancel</mat-icon>
+    </mat-chip>
+</mat-chip-list>
+<div class="cards-wrapper">
+    <app-doc-card  *ngFor="let card of docCards; let i = index" [cardModel]="card"></app-doc-card>
+</div>
+

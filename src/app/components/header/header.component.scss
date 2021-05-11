@@ -1,0 +1,34 @@
+.example-spacer {
+	flex: 1 1 auto;
+}
+
+.table-header{
+	margin-top: 5px;
+	width: calc(100% - 10px);
+}
+
+.header-wrapper{
+	justify-content: center;
+	width: 100vw;
+	display: flex;
+	height: 70px;
+}
+.white-stripe{
+	width: 100vw;
+	height: 2px;
+	background-color: white;
+	top: 0;
+	z-index: 2;
+}
+
+.app-name{
+	font-size: 16px;
+}
+
+.tool-bar{
+	height: 60px;
+}
+
+.version{
+	font-size: 14px;
+}
