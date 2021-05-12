@@ -1,12 +1,3 @@
 export const Credentials = {
-    "type": "service_account",
-    "project_id": "magisrtant-master",
-    "private_key_id": "f6cef3e64506c63e6c70a905624c3db73d913690",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDlkTt0RYqOkhMC\npIVGh9G2HiJ/GJkGJDR6ckjXfxGR3iFxzkwZteIgdPbJUxwGaj79DU4hPSWIJmFS\n0ZwYz8BdR/c+AWpbZw4jySqc5onUDRhVr/2nhBljPQ7PwVOK8TjIDtmXSUDvR6TN\nDDbmCxgRjjf4nuIYlrob4BZ+N8r/wI9a+Sqejiv4azks3f+2muMB4Bwfgq0ikUeJ\n9z1cZRcuZDeOkc32pPZq6cuWBCbm+Wygr87PAtBxJ533NuWgWV7z/jJw6w23//o8\n3pK3QNk9OgBSYSHdyQdqNP7VptHjRajNyS3VvcQqEm5My1TYd1BguO3IKu91Y4aS\nJlLvqpu5AgMBAAECggEAYOJOp67zn2DZogth7dbDNCt6no34guWDukuCH2RSu292\nSOvqJQ2kTdNfFa88DB8Jz00utIt0TAX6m/O3f6cqBZQqLaJ2SvXuuz6ae9Y1w+b0\n5rDcCbcP6dhqaFasVd6g+pl9zkHNpE5lqF3ny2VSNpKBX61aOUtfZwVHKOSOCSnk\nBthXQgNLV1UglIpW8uNfUQ/4T0CO303eFsdZsaiVovCc0FwN4bXupM1iSVisuEO1\ns9XN2abzDU3WEWQE+ym9qPlCxvW1voEe5uSs2itnvpaXgBZmrSoYfb+2IrEVzYOX\naS/pAHSQEa8PzLCsGoEoLnMBiQHy6N/up9jZFGPSWwKBgQD4g5chFgDA8ZEeHYfM\nh07bN58M6BLlo8BneerlYttSXJIpXV9kXyi6rvTxQMlUDgi0E91QyGkBToral7BX\nYeoSS8b7SCEpzj1TO3/A8X8X/0vVz7r+HfGoxyJYs7VRyRb18DtpssMaNF585SZ9\nUFWR3L+cXe4wuR4TCwmnRxoxewKBgQDse4jpEMvme7vapvqcHXG+5aTUCuKlg6Gd\nzKmOrkXCb5/AtA5Mh+ertUFKZQxXNbKJVzs+EanNGLpvA6I+0ZNuTerZP544RJtT\nWODLqkYv1GEcwTDiq/BdBff2Cc/ElHmUD0u5hFSaC/+wAY2mIKoAPCXIY2EBVQeR\nLQyHeb1/WwKBgDMXyuCQh4MjpzRL2fmg8AN+AgNDS29PJWWg2TxkALeENMCwY8Zd\nEiCfi9h1+25+nCd51gyfx4bvQPkEKsssZFVyouxSvg68Sjtshi2C+SBT6qGA3e8U\n9PRATL1z5Rl1gHT7+RsYF6ixj6OZ8TneZFliyzo4zZnS1W4Q3OE5axc1AoGBALVx\no36PsKLLVTtS2v5laRy7PlijcXrlIF/e5EnhVQz2cHB+tmnp7MtGay4Vkf5n6PCP\nyZi6HLqMup7q/tWMH76Gcib2NQOfQD4W94PMxcV1An35jPSeT/JP3g0dQhjmgtIj\nWkqhSfhYNHpq9q/8Z/N+Ms8p0QggoYm2MuLPeaH5AoGAXl3Q7fDlJqk6mZih9q7w\ncLPoXZ4Ue8TYbU+Va6MbvHwBf+Px9WFaLu+KZSqahGIVfUL8uKaz5JLZfKgvIn8K\nVbinMLuEKh5mMQQKFLdqKfsya5h6spztNYSlJjvKz1tQpHwXQZbL5a0936H+goRg\nKIyw51yWXBFHkM4ABNLzkhI=\n-----END PRIVATE KEY-----\n",
-    "client_email": "sheets@magisrtant-master.iam.gserviceaccount.com",
-    "client_id": "101903683512510955467",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheets%40magisrtant-master.iam.gserviceaccount.com"
+
 }
